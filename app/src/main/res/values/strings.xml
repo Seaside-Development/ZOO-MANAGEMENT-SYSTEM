@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ModernLoginRegister</string>
+    <string name="register">REGISTER</string>
+    <string name="ui_register">UI Register</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
