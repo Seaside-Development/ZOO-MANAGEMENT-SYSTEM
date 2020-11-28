@@ -1,7 +1,9 @@
 package com.amier.modernloginregister
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -12,6 +14,12 @@ class RegisterActivity : AppCompatActivity() {
 
         btnLogRegister.setOnClickListener {
             onBackPressed()
+        }
+
+        val btnRegister = findViewById<Button>(R.id.button)
+        btnRegister.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
