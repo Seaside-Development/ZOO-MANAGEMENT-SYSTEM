@@ -13,7 +13,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="This is the scrolling frag"/>
+            android:text="This is the scrolling fragment"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/change_frag"
+            android:text="Open ticket master fragment"/>
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
