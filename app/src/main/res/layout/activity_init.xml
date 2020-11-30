@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:text="My Dashboard"
-    tools:context=".InitActivity">
+    tools:context="com.swen3.zooman.InitActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

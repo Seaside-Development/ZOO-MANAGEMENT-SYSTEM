@@ -1,8 +1,8 @@
-package com.amier.modernloginregister
+package com.swen3.zooman
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.swen3.zooman.R
 
 class InitActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

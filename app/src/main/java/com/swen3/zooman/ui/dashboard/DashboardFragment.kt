@@ -1,4 +1,4 @@
-package com.amier.modernloginregister
+package com.swen3.zooman.ui.dashboard
 
 import android.content.Context
 import android.os.Bundle
@@ -8,22 +8,16 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.swen3.zooman.R
+import com.swen3.zooman.ui.tickets.TicketMasterFragment
 
-class ScrollingFragmentDashboard : Fragment() {
+class DashboardFragment : Fragment() {
 
     // Declare var to store parent activity
     lateinit var mActivity: AppCompatActivity;
 
     override fun onCreateView(inflater: LayoutInflater, root: ViewGroup?, state: Bundle?): View? {
-        val viewRoot = inflater.inflate(R.layout.fragment_scrolling_dashboard, root, false);
-        val btnChangeFrag = viewRoot.findViewById<Button>(R.id.change_frag)
-        val ticketMasterFrag = TicketMasterFragment()
-        btnChangeFrag.setOnClickListener {
-            // Use parent activity to perform fragment transaction
-            mActivity.supportFragmentManager.beginTransaction()
-                .replace(R.id.root_container, ticketMasterFrag)
-                .commitAllowingStateLoss()
-        }
+        val viewRoot = inflater.inflate(R.layout.fragment_dashboard, root, false);
         return viewRoot
     }
 
