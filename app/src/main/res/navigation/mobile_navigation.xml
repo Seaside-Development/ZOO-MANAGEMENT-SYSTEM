@@ -12,8 +12,26 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_animals"
+        android:name="com.swen3.zooman.ui.animals.AnimalsFragment"
+        android:label="@string/menu_animals"
+        tools:layout="@layout/fragment_animals" />
+
+    <fragment
+        android:id="@+id/nav_tickets"
         android:name="com.swen3.zooman.ui.tickets.TicketMasterFragment"
         android:label="@string/menu_tickets"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_ticket_master" />
+
+    <fragment
+        android:id="@+id/nav_trainers"
+        android:name="com.swen3.zooman.ui.trainers.TrainersFragment"
+        android:label="@string/menu_trainers"
+        tools:layout="@layout/fragment_trainers" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.swen3.zooman.ui.map.MapsFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
