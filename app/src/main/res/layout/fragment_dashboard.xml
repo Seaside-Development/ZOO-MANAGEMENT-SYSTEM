@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animalviewLbl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -26,6 +27,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/ticketmasterCard"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -34,18 +36,21 @@
                 app:cardElevation="5dp">
 
                 <LinearLayout
+                    android:id="@+id/Ticketmaster"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/tocketmasterIcn"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginTop="18dp"
                         android:src="@drawable/buy" />
 
                     <TextView
+                        android:id="@+id/ticketmasterLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -60,6 +65,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/animalviewCard"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -74,6 +80,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/animalviewIcn"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginTop="18dp"
@@ -93,6 +100,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mapCard"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -107,12 +115,14 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/mapIcn"
                         android:layout_width="24dp"
                         android:layout_height="21dp"
                         android:layout_marginTop="18dp"
                         android:src="@drawable/map_location_72px" />
 
                     <TextView
+                        android:id="@+id/mapLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -130,7 +140,6 @@
 
 
     </LinearLayout>
-
 
 
 </ScrollView>

@@ -7,9 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.swen3.zooman.R
 import com.swen3.zooman.ui.tickets.TicketMasterFragment
+import kotlinx.android.synthetic.*
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
 
@@ -18,8 +21,23 @@ class DashboardFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, root: ViewGroup?, state: Bundle?): View? {
         val viewRoot = inflater.inflate(R.layout.fragment_dashboard, root, false);
-        return viewRoot
+        val cardTicketMaser = viewRoot.findViewById<CardView>(R.id.ticketmasterCard)
+        cardTicketMaser.setOnClickListener {
+            val ticketMasterFragment = TicketMasterFragment()
+            mActivity.supportFragmentManager.beginTransaction().replace(R.id.nav_host_fragment,ticketMasterFragment).commitAllowingStateLoss()
+        }
+
+    return viewRoot
+
+
+
+
     }
+
+
+
+
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
