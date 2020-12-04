@@ -30,6 +30,9 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".ui.map.ZooMapsActivity"
+            android:label="@string/title_activity_zoo_maps"></activity>
+        <activity
             android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />

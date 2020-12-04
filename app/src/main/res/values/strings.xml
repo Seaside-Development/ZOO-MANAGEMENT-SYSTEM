@@ -124,5 +124,6 @@
     <string-array name="ticket_type">
         <item>Full day pass $25</item>
     </string-array>
+    <string name="title_activity_zoo_maps">Map</string>
 
 </resources>

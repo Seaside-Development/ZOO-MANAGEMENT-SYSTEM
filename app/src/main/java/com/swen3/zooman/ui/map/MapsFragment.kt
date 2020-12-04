@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.swen3.zooman.R
 
 
-// AIzaSyD8vlN9dxuFf18x8fdDD3kB_g6RztUdvPs google api key
+
 class MapsFragment : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
