@@ -7,14 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.swen3.zooman.R
 
-import com.swen3.zooman.dummy.DummyContent.DummyItem
-
 /**
- * [RecyclerView.Adapter] that can display a [DummyItem].
+ * [RecyclerView.Adapter] that can display a [AnimalItem].
  * TODO: Replace the implementation with code for your data type.
  */
 class AnimalItemRecyclerViewAdapter(
-    private val values: List<DummyItem>
+    private val values: List<String>
 ) : RecyclerView.Adapter<AnimalItemRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -25,8 +23,8 @@ class AnimalItemRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
-        holder.idView.text = item.id
-        holder.contentView.text = item.content
+        holder.idView.text = item
+        //holder.contentView.text = item
     }
 
     override fun getItemCount(): Int = values.size

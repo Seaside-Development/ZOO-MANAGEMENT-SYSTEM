@@ -108,10 +108,18 @@
     <string name="menu_home">Home</string>
     <string name="menu_tickets">Ticket Master</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_animals">Animal Management</string>
+    <string name="menu_animals">Animals</string>
     <string name="menu_trainers">Trainer Management</string>
     <string name="menu_map">Map</string>
     <string name="suggestion">Suggestion</string>
+
+    <string-array name="animals">
+        <item>Kangaroo</item>
+        <item>Ostrich</item>
+        <item>Green Monkey</item>
+        <item>Gorilla</item>
+        <item>Python</item>
+    </string-array>
 
     <string-array name="ticket_quantity">
         <item>1</item>
