@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_animals"
-        android:name="com.swen3.zooman.ui.animals.AnimalsFragment"
+        android:name="com.swen3.zooman.ui.animals.AnimalItemsFragment"
         android:label="@string/menu_animals"
         tools:layout="@layout/fragment_animals" />
 
