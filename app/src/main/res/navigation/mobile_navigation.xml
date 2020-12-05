@@ -24,12 +24,6 @@
         tools:layout="@layout/fragment_ticket_master" />
 
     <fragment
-        android:id="@+id/nav_trainers"
-        android:name="com.swen3.zooman.ui.trainers.TrainersFragment"
-        android:label="@string/menu_trainers"
-        tools:layout="@layout/fragment_trainers" />
-
-    <fragment
         android:id="@+id/nav_map"
         android:name="com.swen3.zooman.ui.map.MapsFragment"
         android:label="@string/menu_map"
