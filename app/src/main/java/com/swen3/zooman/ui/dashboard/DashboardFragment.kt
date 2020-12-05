@@ -19,18 +19,7 @@ class DashboardFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, root: ViewGroup?, state: Bundle?): View? {
         val viewRoot = inflater.inflate(R.layout.fragment_dashboard, root, false);
-        val cardmapCard = viewRoot.findViewById<CardView>(R.id.mapCard)
-        val cardTicketMaser = viewRoot.findViewById<CardView>(R.id.ticketmasterCard)
-        cardTicketMaser.setOnClickListener {
-            val ticketMasterFragment = TicketMasterFragment()
-            mActivity.supportFragmentManager.beginTransaction()
-                .replace(R.id.nav_host_fragment, ticketMasterFragment).commitAllowingStateLoss()
-        }
 
-        cardmapCard.setOnClickListener {
-            val activityZooMap = ZooMapsActivity()
-
-        }
 
 
     return viewRoot
