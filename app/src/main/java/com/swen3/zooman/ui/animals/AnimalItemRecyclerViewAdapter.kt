@@ -1,10 +1,10 @@
 package com.swen3.zooman.ui.animals
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.swen3.zooman.R
 
 /**
@@ -39,4 +39,6 @@ class AnimalItemRecyclerViewAdapter(
             return super.toString() + " '" + contentView.text + "'"
         }
     }
+
+
 }
