@@ -1,6 +1,8 @@
 package com.swen3.zooman;
 
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -31,4 +33,5 @@ public class Customer {
 
 
     public String getPassword(){ return  mPassword;}
+
 }

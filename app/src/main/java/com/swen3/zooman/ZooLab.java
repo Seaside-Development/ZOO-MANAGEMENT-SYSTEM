@@ -14,6 +14,7 @@ public class ZooLab {
     private static ZooLab sZooLab;
     private Context mContext;
     private SQLiteDatabase mDatabase;
+    private Customer customer;
 
     public static ZooLab get(Context context) {
         if (sZooLab == null) {

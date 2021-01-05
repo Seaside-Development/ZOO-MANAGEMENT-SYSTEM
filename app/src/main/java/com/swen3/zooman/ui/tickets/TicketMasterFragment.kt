@@ -1,11 +1,12 @@
 package com.swen3.zooman.ui.tickets
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import com.swen3.zooman.Customer
 import com.swen3.zooman.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,10 +36,13 @@ class TicketMasterFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
+
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ticket_master, container, false)
     }
+
 
     companion object {
         /**
