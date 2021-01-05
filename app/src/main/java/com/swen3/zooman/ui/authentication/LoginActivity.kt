@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.swen3.zooman.ui.MainActivity
 import com.swen3.zooman.R
+import com.swen3.zooman.database.DataBaseHandler
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
