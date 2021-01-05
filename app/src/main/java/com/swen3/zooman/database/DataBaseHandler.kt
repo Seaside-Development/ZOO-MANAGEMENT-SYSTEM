@@ -28,12 +28,7 @@ object Cols {
     val COL_DESC="Description"
 }
 
-
-
-class DataBaseHandler (var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME,null,1){
-
-
-
+class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 1){
 
     override fun onCreate(db: SQLiteDatabase?) {
         val createSpeciesTable="CREATE TABLE "+ NAME + " ("+ Cols.COL_ID +  " INT PRIMARY KEY, " +
@@ -54,7 +49,7 @@ class DataBaseHandler (var context: Context) : SQLiteOpenHelper(context, DATABAS
 
     }
 
-   override fun onUpgrade (db :SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+   override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
 
 
 
@@ -65,9 +60,9 @@ class DataBaseHandler (var context: Context) : SQLiteOpenHelper(context, DATABAS
         val cv = ContentValues()
         cv.put(COL_EMAIL, customer.email)
         cv.put(COL_USERNAME, customer.userName)
-        cv.put(COL_PASS,customer.password)
+        cv.put(COL_PASS, customer.password)
 
-        val result = db.insert(TABLE_NAME,null,cv)
+        val result = db.insert(TABLE_NAME, null, cv)
         if (result== (-1).toLong())
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show()
         else
@@ -80,7 +75,7 @@ class DataBaseHandler (var context: Context) : SQLiteOpenHelper(context, DATABAS
         var list : MutableList<Species> = ArrayList()
 
         val db=this.readableDatabase
-        val query="Select * from "+ NAME
+        val query= "Select * from $NAME"
         val result=db.rawQuery(query, null)
         if (result.moveToFirst()){
             do {

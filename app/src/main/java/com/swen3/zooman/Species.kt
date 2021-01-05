@@ -9,5 +9,8 @@ class Species () {
     var diet: String?=null
 
     constructor(specID: Int, specName: String, aniClass: String,  description: String,
-                 diet: String)
+                 diet: String) : this()
+
+    constructor(specID: Int) : this() {
+    }
 }

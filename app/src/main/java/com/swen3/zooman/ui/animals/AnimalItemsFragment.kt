@@ -32,7 +32,6 @@ class AnimalItemsFragment : Fragment() {
     }
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,9 +39,9 @@ class AnimalItemsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_animal_item_list, container, false)
 
         //val animals = mActivity.resources.getStringArray(R.array.animals);
-         val myArrayList: List<String> = Arrays.asList(*resources.getStringArray(R.array.animals))
+        val myArrayList: List<String> = Arrays.asList(*resources.getStringArray(R.array.animals))
 
-        // Set the adapter
+        /* // Set the adapter
         if (view is RecyclerView) {
             with(view) {
                 layoutManager = LinearLayoutManager(context)
@@ -50,10 +49,12 @@ class AnimalItemsFragment : Fragment() {
             }
         }
         return view
-    }
+    }*/
 
-    override fun onAttach(context: Context) {
+        /*fun onAttach(context: Context) {
         super.onAttach(context)
         mActivity = context as AppCompatActivity;
+        }
+    }*/
     }
 }
