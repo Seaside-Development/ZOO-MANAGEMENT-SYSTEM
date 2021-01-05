@@ -6,14 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.swen3.zooman.database.Cols;
-import com.swen3.zooman.database.SpeciesCursorWrapper;
-import com.swen3.zooman.database.SpeciesDbSchema;
 import com.swen3.zooman.database.DataBaseHandler;
-import com.swen3.zooman.database.DataBaseHandlerKt;
-import com.swen3.zooman.database.SpeciesDbSchema;
+import com.swen3.zooman.database.SpeciesCursorWrapper;
 import com.swen3.zooman.database.SpeciesDbSchema.SpeciesTable;
-
-import static com.swen3.zooman.database.SpeciesDbSchema.SpeciesTable.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +16,8 @@ import java.util.UUID;
 
 public class SpeciesLab {
     private static SpeciesLab sSpeciesLab;
-    private Context mContext;
-    private SQLiteDatabase mDatabase;
+    private final Context mContext;
+    private final SQLiteDatabase mDatabase;
 
     public static SpeciesLab get(Context context) {
         if (sSpeciesLab == null) {
