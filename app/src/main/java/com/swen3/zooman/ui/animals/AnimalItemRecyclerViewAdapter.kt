@@ -12,6 +12,8 @@ import com.swen3.zooman.R
  * TODO: Replace the implementation with code for your data type.
  */
 class AnimalItemRecyclerViewAdapter(
+
+
     private val values: List<String>
 ) : RecyclerView.Adapter<AnimalItemRecyclerViewAdapter.ViewHolder>() {
 
@@ -31,7 +33,7 @@ class AnimalItemRecyclerViewAdapter(
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val idView: TextView = view.findViewById(R.id.item_number)
-        val contentView: TextView = view.findViewById(R.id.content)
+        private val contentView: TextView = view.findViewById(R.id.content)
 
         override fun toString(): String {
             return super.toString() + " '" + contentView.text + "'"

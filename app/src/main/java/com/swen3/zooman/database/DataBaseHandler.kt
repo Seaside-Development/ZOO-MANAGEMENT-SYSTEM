@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.widget.Toast
 import com.swen3.zooman.Customer
+import com.swen3.zooman.Species
 
 
 val DATABASE_NAME="ZooMngMnt"
@@ -72,6 +73,32 @@ class DataBaseHandler (var context: Context) : SQLiteOpenHelper(context, DATABAS
         else
             Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show()
     }
+
+
+    fun readData(): MutableList<Species>
+    {
+        var list : MutableList<Species> = ArrayList()
+
+        val db=this.readableDatabase
+        val query="Select * from "+ NAME
+        val result=db.rawQuery(query, null)
+        if (result.moveToFirst()){
+            do {
+                var species = Species()
+                species.specID= result.getString(result.getColumnIndex(Cols.COL_ID)).toInt();
+                species.specName=result.getString(result.getColumnIndex(Cols.COL_SPEC))
+                species.aniClass=result.getString(result.getColumnIndex(Cols.COL_CLASS))
+                species.diet=result.getString(result.getColumnIndex(Cols.COL_FOOD))
+                species.description=result.getString(result.getColumnIndex(Cols.COL_DESC))
+                list.add(species)
+            } while (result.moveToNext())
+        }
+        result.close()
+        db.close()
+        return list
+    }
+
+
 
 
 }
