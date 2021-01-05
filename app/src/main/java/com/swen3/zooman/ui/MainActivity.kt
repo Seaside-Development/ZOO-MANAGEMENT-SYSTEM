@@ -12,6 +12,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.swen3.zooman.R
+import com.swen3.zooman.ZooLab
+import com.swen3.zooman.database.ZooMngHelper
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
 
         /*val scrollingFrag = ScrollingFragmentDashboard()
         supportFragmentManager.beginTransaction()

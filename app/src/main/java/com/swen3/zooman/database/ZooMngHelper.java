@@ -9,11 +9,11 @@ import com.swen3.zooman.database.ZooSchema.*;
 
 
 
-public class ZooHelper extends SQLiteOpenHelper {
+public class ZooMngHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
     private static final String DATABASE_NAME = "ZooMan.db";
 
-    public ZooHelper(Context context) {
+    public ZooMngHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
