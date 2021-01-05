@@ -12,9 +12,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.swen3.zooman.R
-import com.swen3.zooman.database.DataBaseHandler
+import com.swen3.zooman.database.DataBaseHelper
 
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val context =this
-        val dB=DataBaseHandler(context)
+        val dB=DataBaseHelper(context)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)

@@ -7,21 +7,20 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-
 public class DataBaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "users";
     private static final String DB_TABLE = "userTable";
 
     //Columns
-    private static String EMAIL = "EMAIL";
-    private static String USERNAME= "USERNAME";
-    private static String PASS= "PASSWORD";
+    private static final String EMAIL = "EMAIL";
+    private static final String USERNAME= "USERNAME";
+    private static final String PASS= "PASSWORD";
 
     //Query
-    private static final String CREATE_TABLE = "CREATE TABLE "+ DB_TABLE+ " ("+
-            EMAIL + " VARCHAR PRIMARY KEY AUTOINCREMENT, " +
-            USERNAME + "TEXT " + PASS + "TEXT " + ")";
+    private static final String CREATE_TABLE = "CREATE TABLE "+ DB_TABLE+" ("+
+            EMAIL + "VARCHAR PRIMARY KEY AUTOINCREMENT, "+
+            USERNAME+ " TEXT" + PASS+ "TEXT "+ ")";
 
     public DataBaseHelper(Context context) {
         super(context, DB_NAME, null, 1);
@@ -54,7 +53,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public Cursor viewData(){
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "Select * from "+ DB_TABLE;
-
         Cursor cursor = db.rawQuery(query, null);
         return cursor;
     }
